@@ -1,0 +1,22 @@
+
+html{ /*truco para uniformidad de navegadores*/
+    font-size: 62.5%;
+}
+body
+{
+    font-size: 16px;
+}
+
+/* para llamar o hacer referencia a clase se pone . */
+.titulo{ 
+    
+    text-align: center;
+    font-size: 3.8rem;
+
+}
+
+.titulo span{ /*Para que se vea más chico*/
+    font-size: 2rem;
+
+
+}
