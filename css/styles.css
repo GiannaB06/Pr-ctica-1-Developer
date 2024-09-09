@@ -1,3 +1,13 @@
+:root{ /*se refiere a algo que vamos a utilizar de forma global*/
+
+    --blanco:#ffffff;
+    --oscuro:#212121;
+    --primario:#ffc107;
+    --secundario:#0097a9;
+    --gris:#757575;
+}
+
+
 
 html{ /*truco para uniformidad de navegadores*/
     font-size: 62.5%;
@@ -18,5 +28,40 @@ body
 .titulo span{ /*Para que se vea más chico*/
     font-size: 2rem;
 
+}
 
+.navegacion-principal{
+    background-color: var(--secundario);
+    /*Margen es por fuera y padding es por dentro */
+    display: flex;/*Flexbox está diseñado para alinear elementos es tus diseños*/
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 2rem;
+
+}
+
+/*Al poner el cursos en el hipervinculo*/
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+
+}
+
+.navegacion-principal a {
+    color:var(--blanco);
+    text-decoration: none;/* Remueve el estilo subrayado en el texto*/
+    padding: 1rem;
+    
+
+}
+
+
+
+.contenedor{
+    width:120rem; /*1200 pixeles porque 1 rem =10px*/
+    margin: 0 auto;
+}
+
+.nav-bg{
+    background-color: var(--secundario);
 }

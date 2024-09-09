@@ -4,9 +4,19 @@
 <head>
     <meta charset="UTF-8"> <!--Para caracteres como ñ, etc-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Para hacer páginas responsive-->
+   
+    <!--Siempre va primero normalize-->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css" >   
+    <!--Importacion de Google font-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200;400;700&display=swap" rel="stylesheet">
+   <!--Enlace al CSS personalizado-->
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css" >
     <title>Gianna Bianchi</title>
+
 </head>
 
 <body>
@@ -15,13 +25,15 @@
         <h1 class="titulo">Gianna Bianchi <span>Developer</span></h1>
     </header>
 
-    <nav> <!--  -->
-        <a href="#">Inicio</a> <!-- para hacer que vaya a otro lado-->
-        <a href="#">Sobre Mí</a> <!-- para hacer que vaya a otro lado-->
-        <a href="#">Clientes</a> <!-- para hacer que vaya a otro lado-->
-        <a href="#">Contacto</a> <!-- para hacer que vaya a otro lado-->
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor"> 
+            <a href="#">Inicio</a> <!-- para hacer que vaya a otro lado-->
+            <a href="#">Sobre Mí</a> <!-- para hacer que vaya a otro lado-->
+            <a href="#">Clientes</a> <!-- para hacer que vaya a otro lado-->
+            <a href="#">Contacto</a> <!-- para hacer que vaya a otro lado-->
 
-    </nav>
+        </nav>
+    </div>
 
     <section>
         <h2>Diseño y desarrollo Web</h2>
